@@ -1,0 +1,17 @@
+html, body, main {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+.mp-container {    
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    background-color: #fff;
+}
+
+.mp-main {
+    flex-grow: 1;
+}

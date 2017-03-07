@@ -10,9 +10,19 @@ html, body, main {
     justify-content: space-between;
     align-items: stretch;
     background-color: #fff;
+    margin: 0 5% 0 5%;
 }
 
 .mp-main {
     flex-grow: 1;
+}
+
+.mp-main__placeholder-for-intro {
+    background-image: url("../images/tm-sigma-00.jpg");
+    height: 712px;     
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 

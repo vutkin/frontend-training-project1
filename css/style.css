@@ -1,28 +1,288 @@
-html, body, main {
-    margin: 0px;
-    padding: 0px;
-    height: 100%;
+html {
+  font-family: 'Open Sans', sans-serif;
 }
-.mp-container {    
-    display: flex;
-    height: 100%;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: stretch;
-    background-color: #fff;
-    margin: 0 5% 0 5%;
+
+body,
+main {
+  height: 100%;
+}
+
+.mp-container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  background-color: #fff;
+  margin: 0 5% 0 5%;
 }
 
 .mp-main {
-    flex-grow: 1;
+  flex-grow: 1;
 }
 
-.mp-main__placeholder-for-intro {
-    background-image: url("../images/tm-sigma-00.jpg");
-    height: 712px;     
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.mp-header__logo-container {
+  margin-top: 10px;
 }
 
+.mp-intro {
+  text-align: center;
+}
+
+.mp-logo__title {
+  color: #333;
+  font-size: 1.65rem;
+}
+
+.mp-logo__description {
+  color: #888;
+}
+
+.mp-logo {
+  line-height: 40px;
+}
+
+.mp-header__menu-container {
+  position: relative;
+  width: 100%;
+}
+
+.mp-delimeter-line__item {
+  margin: 1em 0 1em;
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.mp-menu {
+  list-style-type: none;
+  line-height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: stretch;
+}
+
+.mp-menu__item-type-1 a {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, .3);
+}
+
+.mp-menu__item-type-1 a:hover {
+  color: #000;
+}
+
+.mp-intro__title {
+  font-size: 3rem;
+}
+
+.mp-intro__description {
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 36px;
+}
+
+.mp-main__inner-placeholder-for-intro,
+.mp-main__inner-placeholder-about {
+  width: 600px;
+}
+
+.mp-main__outer-placeholder {
+  height: 712px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../images/tm-sigma-00.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.mp-intro__button-gallery,
+.mp-intro__button-more,
+.mp-line-type-4__button-detail,
+.mp-line-type-4__button-more,
+.mp-form__submit-button {
+  margin: 10px;
+  padding: 16px 40px;
+  border-style: none;
+  border-radius: 6px;
+  color: rgb(255, 255, 255);
+  vertical-align: bottom;
+  padding: 1rem 2.5rem 1rem 2.5rem;
+  font-size: 1.325rem;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.mp-line-type-2__item {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.mp-line-type-2__title {
+  font-size: 1.5em;
+}
+
+.mp-intro__button-gallery,
+.mp-line-type-4__button-more {
+  background-color: #d9534f;
+  border-color: #d9534f;
+  color: #fff;
+}
+
+.mp-line-type-4__button-detail {
+  color: #fff;
+  background-color: #0275d8;
+  border-color: #0275d8;
+}
+
+.mp-intro__button-more,
+.mp-line-type-4__button-more,
+.mp-form__submit-button {
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #5cb85c;
+}
+
+.mp-line-type-2,
+.mp-line-type-3,
+.mp-line-type-4,
+.mp-line-type-5,
+.mp-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.mp-line-type-2__item,
+.mp-line-type-3__item,
+.mp-line-type-4__item,
+.mp-line-type-5__item {
+  min-height: 200px;
+  padding: 30px 20px;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+.mp-galery__item {
+  display: block;
+  float: left;
+  border-bottom: 1px solid transparent;
+  border-right: 1px solid transparent;
+  box-sizing: border-box;
+}
+
+.mp-galery__item:nth-child(-n+3) {
+  width: 33.33%;
+}
+
+.mp-galery__item:nth-child(7),
+.mp-galery__item:nth-child(8) {
+  width: 50%;
+}
+
+.mp-galery__item:nth-child(4) {
+  width: 66.66%;
+}
+
+.mp-galery__item:nth-child(5),
+.mp-galery__item:nth-child(6) {
+  width: 33.33%;
+}
+
+.mp-galery__item:nth-child(n+9) {
+  width: 25%;
+}
+
+.mp-main__outer-placeholder-about,
+.mp-contact-us {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(../images/tm-sigma-00.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 340px;
+  border-right: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgb(255, 255, 255);
+}
+
+.mp-line-type-3__item {
+  width: 33.33333%;
+  min-height: 200px;
+}
+
+.mp-galery__clear {
+  clear: left;
+}
+
+.mp-line-type-2__item:nth-child(1) {
+  background-color: #e4e8e8;
+}
+
+.mp-line-type-2__item:nth-child(2) {
+  background-color: #999;
+  color: #fff;
+}
+
+.mp-line-type-2__item:nth-child(3) {
+  background-color: #666;
+  color: #fff;
+}
+
+.mp-line-type-2__item:nth-child(4) {
+  background-color: #444;
+  color: #fff;
+}
+
+.mp-line-type-3__item:nth-child(1) {
+  background-color: #e4e8e8;
+}
+
+.mp-line-type-3__item:nth-child(2) {
+  background-color: #999;
+  color: #fff;
+}
+
+.mp-line-type-3__item:nth-child(3) {
+  background-color: #666;
+  color: #fff;
+}
+
+.mp-line-type-4__item:nth-child(1) {
+  background-color: #ebe;
+  color: #000;
+}
+
+.mp-line-type-4__item:nth-child(2) {
+  background-color: #92c4f8;
+  color: #000;
+}
+
+.mp-line-type-5__item:nth-child(1) {
+  background-color: #a52;
+  color: #fff;
+}
+
+.mp-line-type-5__item:nth-child(2) {
+  background-color: #28b;
+  color: #fff;
+}
+
+.mp-line-type-5__item:nth-child(3) {
+  background-color: #496;
+  color: #fff;
+}
+
+.mp-line-type-5__item:nth-child(4) {
+  background-color: #a4a430;
+  color: #fff;
+}

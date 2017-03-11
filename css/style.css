@@ -343,7 +343,8 @@ main {
 
 .mp-form__placeholder-form-type1,
 .mp-form__placeholder-form-type2 {
-  min-width: 33%;
+  min-width: 33.33%;
+  width: 33.33%;
 }
 
 .mp-footer {
@@ -376,14 +377,15 @@ main {
   display: block;
   width: 80%;
   padding: .375rem .75rem;
-  margin: 1.3rem 0 1rem;  
+  margin: 1.3rem 0 2rem;
   line-height: 1.5;
   color: #55595c;
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: .25rem;
-  font-family: inherit;
+  font: inherit;
   font-size: 1em;
+  box-sizing: content-box;
 }
 
 .mp-form__robot-lable {

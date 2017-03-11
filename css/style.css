@@ -22,19 +22,22 @@ main {
 }
 
 .mp-header__logo-container {
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
-.mp-intro {
+.mp-intro,
+.mp-contact-us,
+.mp-about {
   text-align: center;
 }
 
 .mp-logo__title {
   color: #333;
-  font-size: 1.65rem;
+  font-size: 2em;
 }
 
 .mp-logo__description {
+  padding-top: 10px;
   color: #888;
 }
 
@@ -45,50 +48,60 @@ main {
 .mp-header__menu-container {
   position: relative;
   width: 100%;
+  top: -20px;
 }
 
-.mp-delimeter-line__item {
+.mp-delimeter-line__item,
+.mp-footer__delimeter-line-item {
   margin: 1em 0 1em;
   border-bottom: 1px solid rgba(0, 0, 0, .1);
 }
 
+.mp-main__inner-placeholder-for-intro {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
 .mp-menu {
+  font-size: 1.2em;
   list-style-type: none;
   line-height: 30px;
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: flex-end;
   align-items: stretch;
 }
 
-.mp-menu__item-type-1 a {
+.mp-menu__item-link {
   display: block;
   padding: 8px 16px;
   text-decoration: none;
   color: rgba(0, 0, 0, .3);
 }
 
-.mp-menu__item-type-1 a:hover {
+.mp-menu__item-link:hover {
   color: #000;
 }
 
 .mp-intro__title {
-  font-size: 3rem;
+  font-size: 3em;
 }
 
 .mp-intro__description {
-  font-size: 1.2rem;
+  padding: 20px 0;
+  font-size: 1.5em;
   text-align: center;
-  line-height: 36px;
+  line-height: 50px;
 }
 
 .mp-main__inner-placeholder-for-intro,
-.mp-main__inner-placeholder-about {
+.mp-main__inner-placeholder-about,
+.mp-main__inner-placeholder-contact-us {
   width: 600px;
 }
 
 .mp-main__outer-placeholder {
-  height: 712px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -105,14 +118,13 @@ main {
 .mp-line-type-4__button-more,
 .mp-form__submit-button {
   margin: 10px;
-  padding: 16px 40px;
   border-style: none;
   border-radius: 6px;
   color: rgb(255, 255, 255);
   vertical-align: bottom;
-  padding: 1rem 2.5rem 1rem 2.5rem;
-  font-size: 1.325rem;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+  padding: 1em 2.5em 1em 2.5em;
+  font-size: 1.325em;
+  /*box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);*/
   cursor: pointer;
 }
 
@@ -130,12 +142,14 @@ main {
   background-color: #d9534f;
   border-color: #d9534f;
   color: #fff;
+  padding: 0.7em 1em 0.7em 1em;
 }
 
 .mp-line-type-4__button-detail {
   color: #fff;
   background-color: #0275d8;
   border-color: #0275d8;
+  padding: 0.7em 1em 0.7em 1em;
 }
 
 .mp-intro__button-more,
@@ -144,6 +158,7 @@ main {
   color: #fff;
   background-color: #5cb85c;
   border-color: #5cb85c;
+  padding: 0.7em 1em 0.7em 1em;
 }
 
 .mp-line-type-2,
@@ -162,7 +177,7 @@ main {
 .mp-line-type-4__item,
 .mp-line-type-5__item {
   min-height: 200px;
-  padding: 30px 20px;
+  padding: 50px 40px;
   border-right: 1px solid #fff;
   border-bottom: 1px solid #fff;
 }
@@ -198,7 +213,7 @@ main {
 }
 
 .mp-main__outer-placeholder-about,
-.mp-contact-us {
+.mp-main__outer-placeholder-contact-us {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -220,8 +235,12 @@ main {
   min-height: 200px;
 }
 
-.mp-galery__clear {
-  clear: left;
+.mp-galery__item:last-child():after {
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
 }
 
 .mp-line-type-2__item:nth-child(1) {
@@ -285,4 +304,59 @@ main {
 .mp-line-type-5__item:nth-child(4) {
   background-color: #a4a430;
   color: #fff;
+}
+
+.mp-about__title,
+.mp-line-contact-us__title,
+.mp-address__title,
+.mp-line-type-2__title,
+.mp-line-type-3__title,
+.mp-line-type-4__title,
+.mp-line-type-5__title {
+  font-size: 2em;
+}
+
+.mp-about__description,
+.mp-line-contact-us__description,
+.mp-address__description,
+.mp-line-type-2__description,
+.mp-line-type-3__description,
+.mp-line-type-4__description,
+.mp-line-type-5__description {
+  padding: 20px 0;
+  font-size: 1em;
+  line-height: 30px;
+}
+
+.mp-line-type-2__description,
+.mp-line-type-3__description,
+.mp-line-type-4__description,
+.mp-line-type-5__description {
+  font-size: 1.1em;
+}
+
+.mp-main__placeholder-form-line {
+  margin-top: 40px;
+}
+
+.mp-footer {
+  margin: 0 5% 0 5%;
+  font-size: 0.9em;
+}
+
+.mp-footer__copyright-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.mp-footer__copyright-container {
+  margin: 30px 0 52px;
+}
+
+.mp-copyright__top-jumper-link,
+.mp-line-contact-us__link {
+  color: #0275d8;
+  text-decoration: none;
 }

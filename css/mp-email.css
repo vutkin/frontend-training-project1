@@ -1,0 +1,10 @@
+.mp-email__icon-email {
+  font-family: "mp-font";
+  font-size: 2em;
+  display: inline;
+}
+
+.mp-email__icon-email-info {
+  display: inline;
+  margin-left: 20px;
+}

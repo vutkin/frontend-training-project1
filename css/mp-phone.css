@@ -1,0 +1,10 @@
+.mp-phone__icon-phone {
+  font-family: "mp-font";
+  font-size: 2em;
+  display: inline;
+}
+
+.mp-phone__icon-phone-info {
+  display: inline;
+  margin-left: 20px;
+}

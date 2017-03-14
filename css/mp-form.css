@@ -1,0 +1,68 @@
+.mp-form__submit-button {
+  margin: 10px;
+  border-style: none;
+  border-radius: 6px;
+  color: #fff;
+  vertical-align: bottom;
+  padding: 1em 2.5em 1em 2.5em;
+  font-size: 1.325em;
+  /*box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);*/
+  cursor: pointer;
+}
+
+.mp-form__submit-button {
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #5cb85c;
+  padding: 0.7em 1em 0.7em 1em;
+}
+
+.mp-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.mp-form__placeholder-form-type1,
+.mp-form__placeholder-form-type2 {
+  min-width: 33.33%;
+  width: 33.33%;
+}
+
+.mp-form__name-lable,
+.mp-form__email-lable,
+.mp-form__budget-lable,
+.mp-form__subject-lable,
+.mp-form__message-lable {
+  margin-bottom: .5rem;
+}
+
+.mp-form__name-textbox,
+.mp-form__email-textbox,
+.mp-form__budget-value,
+.mp-form__subject-textbox,
+.mp-form__message-textbox,
+.mp-form__robot-lable {
+  display: block;
+  width: 80%;
+  padding: .375rem .75rem;
+  margin: 1.3rem 0 2rem;
+  line-height: 1.5;
+  color: #55595c;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: .25rem;
+  font: inherit;
+  font-size: 1em;
+  box-sizing: content-box;
+}
+
+.mp-form__robot-lable {
+  border: none;
+  padding-left: 0;
+}
+
+.mp-form__message-textbox {
+  height: 70px;
+}

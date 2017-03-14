@@ -1,0 +1,20 @@
+.mp-address__description,
+.mp-address__icon-email-info,
+.mp-address__icon-phone-info {
+  padding: 20px 0;
+  font-size: 1em;
+  line-height: 30px;
+}
+
+.mp-address__title {
+  font-size: 2em;
+}
+
+.mp-address__icon-email-placeholder {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.mp-address__description {
+  padding-right: 40px;
+}

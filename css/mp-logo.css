@@ -1,0 +1,13 @@
+.mp-logo {
+  line-height: 40px;
+}
+
+.mp-logo__title {
+  color: #333;
+  font-size: 2em;
+}
+
+.mp-logo__description {
+  padding-top: 10px;
+  color: #888;
+}

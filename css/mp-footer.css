@@ -1,0 +1,17 @@
+.mp-footer {
+  margin: 0 5% 0 5%;
+  font-size: 0.9em;
+}
+
+.mp-footer__copyright-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: stretch;
+  margin: 30px 0 52px;
+}
+
+.mp-footer__delimeter-line-item {
+  margin: 1em 0 1em;
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+}

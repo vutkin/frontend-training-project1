@@ -1,0 +1,46 @@
+.mp-intro {
+  text-align: center;
+}
+
+.mp-intro__title {
+  font-size: 3em;
+}
+
+.mp-intro__description {
+  padding: 20px 0;
+  font-size: 1.5em;
+  text-align: center;
+  line-height: 50px;
+}
+
+.mp-intro__link-gallery,
+.mp-intro__link-more {
+  text-decoration: none;
+}
+
+.mp-intro__button-gallery,
+.mp-intro__button-more {
+  margin: 10px;
+  border-style: none;
+  border-radius: 6px;
+  color: #fff;
+  vertical-align: bottom;
+  padding: 1em 2.5em 1em 2.5em;
+  font-size: 1.325em;
+  /*box-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);*/
+  cursor: pointer;
+}
+
+.mp-intro__button-gallery {
+  background-color: #d9534f;
+  border-color: #d9534f;
+  color: #fff;
+  padding: 0.7em 1em 0.7em 1em;
+}
+
+.mp-intro__button-more {
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #5cb85c;
+  padding: 0.7em 1em 0.7em 1em;
+}

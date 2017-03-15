@@ -1,0 +1,9 @@
+.mp-container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  background-color: #fff;
+  margin: 0 5% 0 5%;
+}

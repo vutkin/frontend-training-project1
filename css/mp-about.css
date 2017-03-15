@@ -1,0 +1,13 @@
+.mp-about {
+  text-align: center;
+}
+
+.mp-about__title {
+  font-size: 2em;
+}
+
+.mp-about__description {
+  padding: 20px 0;
+  font-size: 1em;
+  line-height: 30px;
+}

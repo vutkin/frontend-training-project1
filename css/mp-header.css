@@ -1,0 +1,9 @@
+.mp-header__logo-container {
+  margin-top: 20px;
+}
+
+.mp-header__menu-container {
+  position: relative;
+  width: 100%;
+  top: -20px;
+}

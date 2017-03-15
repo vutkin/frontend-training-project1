@@ -1,0 +1,18 @@
+.mp-contact-us {
+  text-align: center;
+}
+
+.mp-contact-us__title {
+  font-size: 2em;
+}
+
+.mp-contact-us__description {
+  padding: 20px 0;
+  font-size: 1em;
+  line-height: 30px;
+}
+
+.mp-contact-us__link {
+  color: #0275d8;
+  text-decoration: none;
+}
